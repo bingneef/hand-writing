@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "app-module-path": "^2.2.0",
+    "get-image-colors": "^1.8.1",
+    "get-pixels": "^3.3.0",
+    "kcors": "^2.2.1",
+    "koa": "^2.3.0",
+    "koa-bodyparser": "^4.2.0",
+    "koa-logger": "^3.0.1",
+    "koa-router": "^7.2.1",
+    "path": "^0.12.7",
+    "sharp": "^0.18.2"
+  },
+  "scripts": {
+    "start": "nodemon app.js",
+    "console": "node console.js",
+    "db:migrate": "node_modules/.bin/sequelize db:migrate",
+    "db:rollback": "node_modules/.bin/sequelize db:migrate:undo",
+    "test": "node_modules/jest/bin/jest.js --runInBand --forceExit"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
