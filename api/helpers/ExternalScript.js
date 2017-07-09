@@ -1,7 +1,6 @@
 module.exports = (url, ...values) => {
   return new Promise((resolve, reject) => {
     const spawn = require("child_process").spawn;
-    console.log(values)
     const process = spawn('python3',[url, ...values]);
 
     const fallbackTimeout = setTimeout(() => {

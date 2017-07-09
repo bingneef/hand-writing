@@ -1,0 +1,35 @@
+@import './vars.sass'
+
+html, body, #root
+  margin: 0
+  height: 100%
+
+*
+  -webkit-overflow-scrolling: touch
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0)
+  -webkit-font-smoothing: antialiased
+  font-family: Roboto, sans-serif
+
+h1, h2, h3, h4, h5, h6, p, span
+  font-weight: 400
+  margin-top: 0
+
+a
+  text-decoration: none
+
+input:-webkit-autofill
+  -webkit-box-shadow: 0 0 0px 1000px white inset
+
+.app
+  height: 100%
+
+.app-container
+  padding: $dimension-space $dimension-space
+
+  @media only screen and (min-width: $breakpoint-desktop)
+    padding: 3*$dimension-space 4*$dimension-space
+
+$roboto-font-path: '../../fonts'
+@import '~roboto-fontface/css/roboto/sass/roboto-fontface-thin.scss'
+@import '~roboto-fontface/css/roboto/sass/roboto-fontface-regular.scss'
+@import '~roboto-fontface/css/roboto/sass/roboto-fontface-medium.scss'

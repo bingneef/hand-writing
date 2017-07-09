@@ -1,0 +1,30 @@
+{
+  "name": "Aristoto",
+  "short_name": "Aristoto",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#27668c",
+  "theme_color": "#27668c",
+  "description": "Aristoto App",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/static/images/app-icons/icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png",
+      "density": 1.5
+    },
+    {
+      "src": "/static/images/app-icons/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png",
+      "density": 3.0
+    },
+    {
+      "src": "/static/images/app-icons/icon-288.png",
+      "sizes": "288x288",
+      "type": "image/png",
+      "density": 6.0
+    }
+  ]
+}

@@ -16,13 +16,7 @@ app.use(async (ctx, next) => {
     await next()
     if (ctx.status === 404) ctx.throw(404)
   } catch (err) {
-    if (process.env.NODE_ENV === 'production') {
-      if ((err > 499 && err < 600) || (err.status > 499 && err.status < 600)) {
-        Raven.captureException(err, (err, eventId) => {
-          console.log('Reported error ' + eventId)
-        })
-      }
-    }
+    console.log(err)
     ctx.body = { message: err.message }
     ctx.status = err.status || 500
   }
