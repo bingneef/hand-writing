@@ -1,6 +1,5 @@
 const environment = {
-  SERVER_HOST: "https://aristoto-api-staging.snowflakewebdesign.nl",
-  RAVEN_KEY: "bogus"
+  SERVER_HOST: "https://hand-writing.snowflakewebdesign.nl",
 }
 
 exports = module.exports = environment;

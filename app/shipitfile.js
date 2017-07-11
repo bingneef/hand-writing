@@ -4,26 +4,21 @@ module.exports = function (shipit) {
   shipit.initConfig({
     default: {
       workspace: 'tmp',
-      dirToCopy: 'build',
-      repositoryUrl: 'git@github.com:bingneef/AristotoApp.git',
+      dirToCopy: 'app/build',
+      repositoryUrl: 'git@github.com:bingneef/hand-writing.git',
       keepReleases: 10,
       deleteOnRollback: false,
       shallowClone: false
     },
     staging: {
       branch: 'develop',
-      deployTo: '/var/www/aristoto-staging',
+      deployTo: '/var/www/hand-writing/app',
       servers: 'bing@5.157.85.46'
     },
-    production: {
-      branch: 'master',
-      deployTo: '/var/www/aristoto',
-      servers: 'bing@5.157.85.46'
-    }
   });
 
   shipit.blTask('build', () => {
-    let cmd = `cd ${shipit.config.workspace} && yarn install && yarn run build:${shipit.environment}`
+    let cmd = `cd ${shipit.config.workspace}/app && yarn install && yarn run build:${shipit.environment}`
     return shipit.local(cmd);
   });
 

@@ -19,6 +19,9 @@
     "test": "node_modules/jest/bin/jest.js --runInBand --forceExit"
   },
   "devDependencies": {
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.11.0",
+    "shipit": "^1.0.2",
+    "shipit-pm2": "^0.0.4",
+    "shipit-shared": "^4.4.2"
   }
 }

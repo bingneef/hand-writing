@@ -1,3 +1,4 @@
 node_modules
 api/scripts/data/*
 __pycache__
+tmp
