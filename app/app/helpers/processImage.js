@@ -5,7 +5,7 @@ export const calcValues = (ctx, {debug = false}) => {
   const width = box.right - box.left
   const height = box.bottom - box.top
 
-  const boxCount = 8
+  const boxCount = 16
 
   let properties = {}
   if (width > height) {

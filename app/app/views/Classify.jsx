@@ -18,6 +18,8 @@ class Classify extends Component {
   }
 
   classify (ctx) {
+    this.setState({prediction: null})
+
     const values = calcValues(ctx, {debug: this.props.debugMode})
 
     axios.get(`/classify?key=${this.props.datasetKey}&values=${values.join(',')}`)

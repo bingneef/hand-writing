@@ -32,8 +32,10 @@ class Train extends Component {
   }
 
   train (ctx) {
+    let result = this.state.randomTrainingValue
+    this.setState({randomTrainingValue: null})
     const values = calcValues(ctx, { debug: this.props.debugMode })
-    axios.get(`train?key=${this.props.datasetKey}&result=${this.state.randomTrainingValue}&values=${values.join(',')}`)
+    axios.get(`train?key=${this.props.datasetKey}&result=${result}&values=${values.join(',')}`)
       .then((response) => {
         this.setState({randomTrainingValue: this.generateRandomValue()})
       })
@@ -46,14 +48,16 @@ class Train extends Component {
     return (
       <div className="app-train">
         <DrawCanvas onDrawEnd={ this.train }/>
-        <h1 className="app-train-overlay-text">Draw: { this.state.randomTrainingValue }</h1>
+        {
+          this.state.randomTrainingValue &&
+          <h1 className="app-train-overlay-text">Draw: { this.state.randomTrainingValue }</h1>
+        }
       </div>
     );
   }
 }
 
 const mapStateToProps = (state) => {
-  console.log(state.settings)
   return {
     debugMode: state.settings.debugMode,
     datasetKey: state.settings.datasetKey,

@@ -1,2 +1,3 @@
 node_modules
+api/scripts/data/*
 __pycache__

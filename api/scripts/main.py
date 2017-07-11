@@ -33,7 +33,7 @@ for file in files:
       X.append(row)
 
   # Create a classifier: a support vector classifier
-  classifier = svm.SVC(gamma=0.001)
+  classifier = svm.SVC(gamma=0.0001)
   classifier.fit(X, y)
 
   # Persist
