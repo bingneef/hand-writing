@@ -13,7 +13,7 @@ args = parser.parse_args()
 
 workingDir = './data'
 if args.api:
-  workingDir = './scripts/data'
+  workingDir = 'scripts/data'
 
 # Get set from csv
 files = os.listdir(workingDir)
