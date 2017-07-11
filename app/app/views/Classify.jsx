@@ -37,7 +37,7 @@ class Classify extends Component {
     return (
       <div className="app-classify">
         <DrawCanvas onDrawEnd={this.classify}/>
-        { this.state.prediction &&
+        { this.state.prediction !== null &&
           <h1 className="app-classify-overlay-text">Prediction: { this.state.prediction }</h1>
         }
       </div>

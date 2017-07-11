@@ -20,8 +20,12 @@ module.exports = (shipit) => {
       shared: {
         overwrite: false,
         files: [
-          'app.json'
-        ]
+          'app.json',
+          'scripts/data/numbers.csv',
+          'scripts/data/numbers.pkl',
+          'scripts/data/shaped.csv',
+          'scripts/data/shaped.pkl',
+        ],
       },
     },
     staging: {

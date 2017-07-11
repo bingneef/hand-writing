@@ -49,7 +49,7 @@ class Train extends Component {
       <div className="app-train">
         <DrawCanvas onDrawEnd={ this.train }/>
         {
-          this.state.randomTrainingValue &&
+          this.state.randomTrainingValue !== null &&
           <h1 className="app-train-overlay-text">Draw: { this.state.randomTrainingValue }</h1>
         }
       </div>
