@@ -3,6 +3,7 @@ module.exports = (shipit) => {
   require('./node_modules/shipit-deploy')(shipit)
   require('./node_modules/shipit-pm2')(shipit)
   require('./node_modules/shipit-shared')(shipit)
+  require('./node_modules/shipit-npm')(shipit)
 
   shipit.initConfig({
     default: {
@@ -12,7 +13,6 @@ module.exports = (shipit) => {
       ignores: ['.git', 'node_modules'],
       keepReleases: 10,
       shallowClone: true,
-      dirToCopy: '',
       npm: {
         remote: true,
         installFlags: ['--only=production']
@@ -30,13 +30,4 @@ module.exports = (shipit) => {
       servers: 'bing@5.157.85.46'
     }
   })
-
-  shipit.blTask('build', () => {
-    let cmd = `cd ${shipit.config.workspace}/api && yarn install --production`
-    return shipit.local(cmd);
-  });
-
-  shipit.on('fetched', () => {
-    return shipit.start('build');
-  });
 }

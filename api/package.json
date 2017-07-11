@@ -21,6 +21,7 @@
   "devDependencies": {
     "nodemon": "^1.11.0",
     "shipit": "^1.0.2",
+    "shipit-npm": "^0.2.0",
     "shipit-pm2": "^0.0.4",
     "shipit-shared": "^4.4.2"
   }
