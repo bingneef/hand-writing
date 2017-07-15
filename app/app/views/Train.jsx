@@ -22,9 +22,13 @@ class Train extends Component {
   }
 
   generateRandomValue () {
+    let options;
     switch (this.props.datasetKey) {
       case 'shapes':
-        let options = ['square', 'circle', 'triangle', 'line',]
+        options = ['square', 'circle', 'triangle', 'line',]
+        return options[Math.floor(Math.random() * options.length)]
+      case 'letters':
+        options = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z',]
         return options[Math.floor(Math.random() * options.length)]
       default:
         return Math.floor(Math.random() * 10)

@@ -54,6 +54,7 @@ class Settings extends Component {
           >
             <MenuItem value={'numbers'} primaryText="Numbers" />
             <MenuItem value={'shapes'} primaryText="Shapes" />
+            <MenuItem value={'letters'} primaryText="Letters" />
           </SelectField>
           <Toggle
             label="Debug"
