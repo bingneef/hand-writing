@@ -21,6 +21,8 @@ module.exports = (shipit) => {
         overwrite: false,
         files: [
           'app.json',
+          'scripts/data/letters.csv',
+          'scripts/data/letters.pkl',
           'scripts/data/numbers.csv',
           'scripts/data/numbers.pkl',
           'scripts/data/shapes.csv',
