@@ -10,7 +10,8 @@
     "build:production": "rm -rf ./build && NODE_ENV=\"production\" ./node_modules/webpack/bin/webpack.js -p",
     "build:staging": "rm -rf ./build && NODE_ENV=\"staging\" ./node_modules/webpack/bin/webpack.js",
     "lint-break-on-errors": "./node_modules/eslint/bin/eslint.js ./app ./webpack.config.js -f table --ext .js --ext .jsx",
-    "lint": "./node_modules/eslint/bin/eslint.js ./app ./webpack.config.js -f table --ext .js --ext .jsx || true"
+    "lint": "./node_modules/eslint/bin/eslint.js ./app ./webpack.config.js -f table --ext .js --ext .jsx || true",
+    "heroku-postbuild": "yarn run build:production",
   },
   "devDependencies": {
     "autoprefixer": "^6.5.3",
