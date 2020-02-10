@@ -1,15 +1,15 @@
 {
   "dependencies": {
     "app-module-path": "^2.2.0",
-    "get-image-colors": "^1.8.1",
-    "get-pixels": "^3.3.0",
-    "kcors": "^2.2.1",
-    "koa": "^2.3.0",
-    "koa-bodyparser": "^4.2.0",
-    "koa-logger": "^3.0.1",
-    "koa-router": "^7.2.1",
+    "get-image-colors": "^2.0.0",
+    "get-pixels": "^3.3.2",
+    "kcors": "^2.2.2",
+    "koa": "^2.11.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.1",
+    "koa-router": "^8.0.7",
     "path": "^0.12.7",
-    "sharp": "^0.18.2"
+    "sharp": "^0.24.0"
   },
   "scripts": {
     "start": "nodemon app.js",
