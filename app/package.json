@@ -57,7 +57,7 @@
     "webpack-dev-server": "^2.3.1"
   },
   "dependencies": {
-    "axios": "^0.15.3",
+    "axios": "^0.21.1",
     "babel-polyfill": "^6.16.0",
     "es6-promise": "^3.1.2",
     "fabricjs": "^1.0.0",
