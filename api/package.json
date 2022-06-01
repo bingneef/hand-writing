@@ -9,7 +9,7 @@
     "koa-logger": "^3.2.1",
     "koa-router": "^8.0.7",
     "path": "^0.12.7",
-    "sharp": "^0.24.0"
+    "sharp": "^0.30.5"
   },
   "scripts": {
     "start": "nodemon app.js",
